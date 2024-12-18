@@ -1,6 +1,75 @@
 <html>
 <head><meta charset="utf-8" /></head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    header {
+        background-color: #444;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+        color: #444;
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+    .plotly-graph-div {
+        margin: 20px auto;
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #444;
+        color: white;
+        margin-top: 30px;
+    }
+    footer a {
+        color: #f9f9f9;
+        text-decoration: none;
+    }
+</style>
 <body>
+    <header>
+        <h1>Global Developer Distribution (2021)</h1>
+    </header>
+    <div class="content">
+        <div class="description">
+            <p>
+                This visualization represents the geographical distribution of developers who participated in the 
+                <strong>2021 Stack Overflow Developer Survey</strong>. Each country is shaded according to the number of respondents, 
+                with darker shades indicating a higher number of developers.
+            </p>
+            <h3>Key Insights:</h3>
+            <ol>
+                <li><strong>Highest Participation:</strong> India stands out as the country with the highest number of respondents, signifying its strong developer community and growing tech industry.</li>
+                <li><strong>Lowest Participation:</strong> Countries with lighter shades indicate fewer respondents, often due to smaller developer communities or limited survey outreach in those regions.</li>
+                <li><strong>Regional Trends:</strong> The visualization highlights significant developer presence in countries like the United States, Germany, and the United Kingdom, reflecting their established IT sectors.</li>
+            </ol>
+            <h3>Design Highlights:</h3>
+            <ul>
+                <li><strong>Annotations:</strong> The map highlights the countries with the highest and lowest participation using clear labels, making it easy to identify key insights at a glance.</li>
+                <li><strong>Interactivity:</strong> Users can hover over any country to see the exact number of respondents, providing a detailed and engaging exploration of the data.</li>
+                <li><strong>Color Gradient:</strong> A red gradient emphasizes the hierarchy of participation, ensuring clarity while avoiding visual clutter.</li>
+            </ul>
+        </div>
+
     <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
         <script type="text/javascript">/**
 * plotly.js v2.30.0
